@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Care For Humanity Organization (CHO)</title>
+
+<style>
+
+body{
+font-family:Arial;
+margin:0;
+background:#f5f5f5;
+}
+
+header{
+background:#0a6a3c;
+color:white;
+padding:20px;
+text-align:center;
+}
+
+nav{
+background:#222;
+padding:12px;
+text-align:center;
+}
+
+nav a{
+color:white;
+margin:15px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.hero{
+/*background:url("https://images.unsplash.com/photo-1488521787991-ed7bbaae773c");*/
+background:url("images/Picture8.png");
+background-size:cover;
+color:white;
+padding:120px;
+text-align:center;
+}
+
+.hero h1{
+font-size:45px;
+}
+
+.btn{
+background:#0a6a3c;
+padding:12px 25px;
+color:white;
+text-decoration:none;
+border-radius:5px;
+}
+
+.section{
+padding:50px;
+background:white;
+margin:20px;
+border-radius:10px;
+}
+
+.stats{
+display:flex;
+justify-content:space-around;
+text-align:center;
+}
+
+.card{
+background:#f4f4f4;
+padding:20px;
+margin:10px;
+border-radius:8px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.gallery img{
+width:100%;
+border-radius:8px;
+}
+
+form input,form textarea{
+width:20%;
+padding:10px;
+margin:10px 0;
+}
+
+footer{
+background:#222;
+color:white;
+padding:30px;
+text-align:center;
+}
+    
+/*==================start====Css for the dropdown menu==========================GRT===*/
+nav{
+background:#222;
+}
+
+.menu{
+list-style:none;
+margin:0;
+padding:0;
+display:flex;
+justify-content:center;
+}
+
+.menu li{
+position:relative;
+}
+
+.menu li a{
+display:block;
+padding:14px 20px;
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+.menu li a:hover{
+background:#0a6a3c;
+}
+
+/* Dropdown */
+
+.dropdown-content{
+display:none;
+position:absolute;
+background:#333;
+top:45px;
+min-width:300px;
+}
+
+.dropdown-content li{
+display:block;
+}
+
+.dropdown:hover .dropdown-content{
+display:block;
+}
+
+/* Mobile menu button */
+
+.menu-toggle{
+display:none;
+font-size:28px;
+color:white;
+padding:10px;
+cursor:pointer;
+}
+
+/* Mobile styles */
+
+@media(max-width:768px){
+
+.menu{
+flex-direction:column;
+display:none;
+}
+
+.menu.active{
+display:block;
+}
+
+.menu li{
+text-align:center;
+}
+
+.dropdown-content{
+position:static;
+}
+
+.menu-toggle{
+display:block;
+text-align:center;
+}
+
+}
+/*==================End====Css for the dropdown menu=======================GRT======*/
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>CARE FOR HUMANITY ORGANIZATION (CHO)</h1>
+
+<p>Ending Poverty and Hunger Globally</p>
+
+</header>
+
+  
+<nav>
+
+<div class="menu-toggle" onClick="toggleMenu()">☰</div>
+
+<ul class="menu" id="menu">
+
+<li><a href="index.html">Home</a></li>
+
+<li class="dropdown">
+
+<a href="#about">About</a><a href="#">Programs ▾</a>
+
+<ul class="dropdown-content">
+
+<li><a href="#programs">All Programs</a></li>
+<li><a href="#projects">Projects</a></li>
+</ul>
+</li>
+
+<li><a href="#gallery">Gallery</a></li>
+    
+<li class="dropdown">
+<a href="#">Strategic Projects ▾</a>
+<ul class="dropdown-content">
+<li><a href="#programs">Agriculture and food security initiatives</a></li>
+<li><a href="#projects">Humanitarian disaster response</a></li>
+<li><a href="#programs">Enterprise development and microfinance</a></li>
+<li><a href="#projects">Education support programs</a></li>
+<li><a href="#projects">Gender and child protection</a></li>
+<li><a href="#projects">Mental health and psychosocial support</a></li>
+</ul>
+</li>
+<li><a href="our%20work.html">Our work</a></li>    
+<li><a href="#volunteer">Volunteer</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+    
+  
+    
+    
+<script>
+
+function toggleMenu(){
+
+var menu = document.getElementById("menu");
+
+menu.classList.toggle("active");
+
+}
+
+</script>
+    
+    
+    
+
+<div class="hero">
+
+<h1>Accelerating Progress to End Poverty</h1>
+
+<p>Supporting vulnerable communities in South Sudan and across the world.</p>
+
+<a class="btn" href="#donate">Donate Now</a>
+
+</div>
+    <center>
+<section class="section" id="about">
+
+<h2>About CHO</h2>
+
+<p>
+
+Care for Humanity Organization (CHO) is a humanitarian NGO founded by
+Simon Lominsuk Evans and registered in South Sudan.
+
+The organization works to eliminate poverty, hunger, and inequality
+through sustainable development programs and humanitarian assistance.
+
+</p>
+
+<h3>Vision</h3>
+<p>Dedicated to ending poverty and hunger in vulnerable communities.</p>
+
+<h3>Mission</h3>
+<p>Accelerating the elimination of poverty through strategic development initiatives.</p>
+
+</section>
+    
+   </center> 
+    
+    
+<section class="section" id="impact">
+
+<h2><center>Our Impact</center></h2>
+
+<div class="stats">
+
+<div>
+<h1 class="counter" data-target="1000000">0</h1>
+<p>Target Beneficiaries</p>
+</div>
+
+<div>
+<h1 class="counter" data-target="10">0</h1>
+<p>Strategic Programs</p>
+</div>
+
+<div>
+<h1 class="counter" data-target="5">0</h1>
+<p>Countries Planned</p>
+</div>
+
+<div>
+<h1 class="counter" data-target="2030">0</h1>
+<p>Development Vision</p>
+</div>
+
+</div>
+
+</section>
+    
+    
+    
+    
+    
+<script>
+
+const counters = document.querySelectorAll(".counter");
+
+counters.forEach(counter => {
+
+const updateCounter = () => {
+
+const target = +counter.getAttribute("data-target");
+
+const current = +counter.innerText;
+
+const increment = target / 200;
+
+if(current < target){
+
+counter.innerText = Math.ceil(current + increment);
+
+setTimeout(updateCounter,10);
+
+}else{
+
+counter.innerText = target.toLocaleString();
+
+}
+
+};
+
+updateCounter();
+
+});
+
+</script>
+    
+    
+  
+<section class="section" id="programs">
+
+<h1><center>Our Programs</center></h1>
+
+<div class="grid">
+
+<div class="card">
+    <img src="images/Picture3.png"style="width:100%; height:80%">
+<h3>Food Security</h3>
+<p>Agriculture support and farmer training programs.</p>
+</div>
+
+<div class="card">
+    <img src="images/Picture3.png"style="width:100%; height:80%">
+<h3>Health & Nutrition</h3>
+<p>Medical outreach and maternal health programs.</p>
+</div>
+
+<div class="card">
+    <img src="images/Picture3.png" style="width:100%; height:80%">
+<h3>Education Support</h3>
+<p>Teacher training, school renovation and scholarships.</p>
+</div>
+
+</div>
+
+<br><br>
+
+
+<div class="grid">
+<div class="card">
+   <img src="images/Picture5.png" style="width:100%; height:80%">
+<h3>WASH</h3>
+<p>Clean water, sanitation and hygiene programs.</p>
+</div>
+
+<div class="card">
+     <img src="images/Picture2.png" style="width:100%; height:80%">
+<h3>Peace Building</h3>
+<p>Conflict resolution and reconciliation initiatives.</p>
+</div>
+
+<div class="card">
+     <img src="images/Picture5.png" style="width:100%; height:80%">
+<h3>Climate Action</h3>
+<p>Renewable energy and environmental protection.</p>
+</div>
+
+</div>
+
+</section>    
+    
+    
+    
+
+
+<section class="section gallery" id="gallery">
+
+<h2>Our Work</h2>
+
+<div class="grid">
+
+<img src="images/Picture3.png">
+
+<img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e">
+
+<img src="https://images.unsplash.com/photo-1542810634-71277d95dcbb">
+
+<img src="images/Picture4.png">
+
+</div>
+
+</section>
+
+<section class="section" id="volunteer">
+
+<h2>Become a Volunteer</h2>
+
+    <center>
+<form>
+
+<input type="text" placeholder="Full Name"><br>
+
+<input type="email" placeholder="Email Address"><br>
+
+<textarea placeholder="Why do you want to volunteer?"></textarea><br>
+
+<button class="btn">Submit</button>
+
+</form>
+
+  </center>
+    
+</section>
+
+<section class="section" id="donate">
+
+<h2>Support Our Mission</h2>
+
+<p>
+
+Your donation helps us fight poverty and hunger in vulnerable
+communities across South Sudan.
+
+</p>
+
+<a class="btn">Donate Now</a>
+
+</section>
+
+<section class="section" id="contact">
+
+<h2>Contact Us</h2>
+
+<p><b>Founder / Executive Director</b></p>
+
+<p>Simon Lominsuk Evans</p>
+
+<p>Juba, South Sudan</p>
+
+<p>Email: info@cho-humanity.org</p>
+
+    <center>
+<form>
+
+<input type="text" placeholder="Your Name"><br>
+
+<input type="email" placeholder="Your Email"><br>
+
+<textarea placeholder="Your Message"></textarea><br>
+
+<button class="btn">Send Message</button>
+
+</form>
+  </center>
+
+</section>
+
+<footer>
+    
+    
+<p>
+📧 Email:
+<a href="mailto:info@cho-humanity.org">
+info@cho-humanity.org
+</a>
+</p>
+    
+<p>
+📍 Location:
+<a href="https://www.google.com/maps/place/Juba,+South+Sudan" target="_blank">
+Juba, South Sudan
+</a>
+</p>
+    
+<iframe
+width="50%"
+height="300"
+style="border:0"
+loading="lazy"
+allowfullscreen
+src="https://www.google.com/maps?q=Juba,South+Sudan&output=embed">
+</iframe>
+    
+
+<p>
+
+© 2026 Care for Humanity Organization (CHO)
+
+</p>
+
+</footer>
+
+</body>
+
+</html>
