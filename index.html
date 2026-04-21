@@ -37,7 +37,7 @@ font-weight:bold;
 
 .hero{
 /*background:url("https://images.unsplash.com/photo-1488521787991-ed7bbaae773c");*/
-background:url("Picture8.png");
+background:url("images/Picture8.png");
 background-size:cover;
 color:white;
 padding:120px;
@@ -158,11 +158,11 @@ cursor:pointer;
 }
 
 .sectiona{
-	/*margin: 10%;*/
-	background:url("Picture4.png");
+	margin: 10%;
+	background:url("images/Picture4.png");
 	background-size:cover;
 	color:black;
-	padding:120px;
+	/*padding:120px;*/
 	padding:10%;
 	text-align:center;
 	font-size:20px;
@@ -206,9 +206,9 @@ text-align:center;
 
 <header>
 
-<h1><img src="Picture6.png" width="5%" height="5%">CARE FOR HUMANITY ORGANIZATION (CHO)</h1>
+<img src="images/headed1.png" width="65%" height="35%">
 
-<p>Ending Poverty and Hunger Globally</p><hr>
+<hr>
 
 </header>
 
@@ -231,25 +231,18 @@ text-align:center;
 </ul>
 </li>
 
-<li><a href="#gallery">Gallery</a></li>
+<li><a href="#Vision">Mission & Vision</a></li>
     
 <li class="dropdown">
-<a href="#">Strategic Projects ▾</a>
-<ul class="dropdown-content">
-<li><a href="#programs">Agriculture and food security initiatives</a></li>
-<li><a href="#projects">Humanitarian disaster response</a></li>
-<li><a href="#programs">Enterprise development and microfinance</a></li>
-<li><a href="#projects">Education support programs</a></li>
-<li><a href="#projects">Gender and child protection</a></li>
-<li><a href="#projects">Mental health and psychosocial support</a></li>
-</ul>
+<a href="#">Projects</a>
 </li>
-<li><a href="our%20work.html">Our work</a></li>    
-<li><a href="#volunteer">Volunteer</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul>
+<li><a href="#">Blog</a></li>  
+<li><a href="#impact">Impact</a></li>     
+<li><a href="#Volunteer">Get Involved / Volunteer</a></li>
+<li><a href="contact.html">Contact Us</a></li>
+</ul> <hr> 
 </nav>
-    
+  
   
     
     
@@ -277,7 +270,29 @@ menu.classList.toggle("active");
 <a class="btn" href="#donate">Donate Now</a>
 
 </div>
+    <center>
+<section class="sectiona" id="about">
 
+
+<h2>About Us</h2>
+        <p >
+          CHO is Co-founded by Simon L. Evans (In South Sudan on Feb.2024) on 
+          the grounds that thousands of South Sudanese people and millions of people 
+          in the globe are suffering from this deadly monster called poverty and hunger. 
+          Collins A. (2021) asserted that Poverty is a serious economic and social problem that affects a large proportion of the world's population and manifests itself 
+          in diverse forms such as lack of income and productive assets to ensure sustainable livelihoods, chronic hunger and mal-nutrition, homelessness, lack of 
+          durable goods, disease, lack of access to clean water, lack of education, low 
+          life expectancy, social exclusion and discrimination, high levels of unemployment, high rate of infant and maternal mortality, and lack of participation in 
+          decision making. In fact, poverty is the major cause of hunger and it is defined</p>
+
+
+<h3>Vision</h3>
+<p>Dedicated to ending poverty and hunger in vulnerable communities.</p>
+
+<h3>Mission</h3>
+<p>Accelerating the elimination of poverty through strategic development initiatives.</p>
+</section>
+   </center> 
     
     
 <section class="section" id="impact">
@@ -357,43 +372,51 @@ updateCounter();
 <div class="grid">
 
 <div class="card">
-    <img src="Picture2.png"style="width:100%; height:80%">
+    <img src="images/Picture3.png"style="width:100%; height:80%">
 <h3>Food Security</h3>
 <p>Agriculture support and farmer training programs.</p>
 </div>
 
 <div class="card">
-    <img src="Picture3.png"style="width:100%; height:80%">
+    <img src="images/Picture3.png"style="width:100%; height:80%">
 <h3>Health & Nutrition</h3>
 <p>Medical outreach and maternal health programs.</p>
 </div>
 
 <div class="card">
-    <img src="Picture8.png" style="width:100%; height:80%">
+    <img src="images/Picture3.png" style="width:100%; height:80%">
 <h3>Education Support</h3>
 <p>Teacher training, school renovation and scholarships.</p>
 </div>
 
 </div>
 
-<br><br>
 
+</section>    
+    
+ 
+
+
+  
+<section class="section" id="programs">
+
+<h1><center>Get Involved / Volunteer</center></h1>
 
 <div class="grid">
 <div class="card">
-   <img src="Picture5.png" style="width:100%; height:80%">
+   <img src="images/Picture5.png" style="width:100%; height:80%">
 <h3>WASH</h3>
 <p>Clean water, sanitation and hygiene programs.</p>
 </div>
 
 <div class="card">
-     <img src="Picture8.png" style="width:100%; height:80%">
+     <img src="images/Picture2.png" style="width:100%; height:80%">
 <h3>Peace Building</h3>
 <p>Conflict resolution and reconciliation initiatives.</p>
 </div>
 
 <div class="card">
-     <img src="Picture5.png" style="width:100%; height:80%">
+     <img src="images/Picture5.png" style="width:100%; height:80%">
 <h3>Climate Action</h3>
 <p>Renewable energy and environmental protection.</p>
 </div>
@@ -401,21 +424,13 @@ updateCounter();
 </div>
 
 </section>    
-    
-    
+
+ 
 
 
 <section class="section" id="contact">
 
-<h2>Contact Us</h2>
 
-<p><b>Founder / Executive Director</b></p>
-
-<p>Simon Lominsuk Evans</p>
-
-<p>Juba, South Sudan</p>
-
-<p>Email: info@cho-humanity.org</p>
 
     <center>
 <form>
@@ -424,7 +439,7 @@ updateCounter();
 
 <input type="email" placeholder="Your Email"><br>
 
-<textarea placeholder="Your Message"></textarea><br>
+<input type="number" placeholder="Your Mobile"><br>
 
 <button class="btn">Send Message</button>
 
@@ -437,10 +452,7 @@ updateCounter();
     
     
 <p>
-📧 Email:
-<a href="mailto:info@cho-humanity.org">
-info@cho-humanity.org
-</a>
+
 </p>
     
 <p>
@@ -470,12 +482,4 @@ src="https://www.google.com/maps?q=Juba,South+Sudan&output=embed">
 
 </body>
 
-
 </html>
-
-
-
-
-
-
-
